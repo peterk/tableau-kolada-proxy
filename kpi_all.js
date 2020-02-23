@@ -1,4 +1,4 @@
-var kpilist = [
+const kpilist = [
   {
     "id": "N00002",
     "title": "Personalkostnader som andel av verksamhetens kostnader, andel (%)"

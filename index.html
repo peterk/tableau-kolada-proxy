@@ -4,15 +4,13 @@
     <title>Kolada Tableau Proxy</title>
     <meta charset="UTF-8">
     <meta http-equiv="Cache-Control" content="no-store" />
-
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="multi-select.css" media="screen" rel="stylesheet" crossorigin="anonymous" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
-
     <script src="https://connectors.tableau.com/libs/tableauwdc-2.3.latest.js" type="text/javascript"></script>
     <script src="Kolada.js" type="text/javascript"></script>
-    <script src="kpi_all.json" type="text/javascript"></script>
+    <script src="kpi_all.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -20,7 +18,7 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
-        Tableau WDC för Kolada (v 0.1.1)
+        Tableau WDC för Kolada (v 0.1.2)
       </a>
     </div>
     <ul class="nav navbar-nav navbar-right">
@@ -30,12 +28,12 @@
 </nav>
     <div class="container container-table">
         <div class="row vertical-center-row">
-            <p>Öppna denna sida i <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_web_data_connector.htm">Tableaus Web Data Connector</a>. Observera att det kan ta lite tid innan listan av KPI:er är laddad och sökbar.</p>
+            <p>Öppna denna sida i <a href="https://help.tableau.com/current/pro/desktop/en-us/examples_web_data_connector.htm">Tableaus Web Data Connector</a>. Observera att det kan ta lite tid innan listan av KPI:er är laddad och sökbar. Data laddas för samtliga kommuner.</p>
         </div>
         <div class="row vertical-center-row">
             <div class="text-center col-md-12">
                 <select multiple="multiple" id="my-select" name="my-select[]"></select>
-                <label for="years">Valda år</label>
+                <label for="years">Valda år (kommaseparerade)</label>
                 <input type="text" name="years" id="years" value="2018">
                 <button type="button" id="submitButton" class="btn btn-success" style="margin: 10px;">Läs in utvalda Koladadata</button>
             </div>
