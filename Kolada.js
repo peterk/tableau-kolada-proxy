@@ -117,8 +117,8 @@ function getFeatureTotal(feat) {
             }
             
             table.appendRows(tableData);
-            doneCallback();
         });
+        doneCallback();
     }
     
     
