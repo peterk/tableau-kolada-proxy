@@ -138,8 +138,8 @@ function getFeatureTotal(feat) {
         }
         
         table.appendRows(tableData);
-        doneCallback();
     });
+    doneCallback();
 }
 
 
@@ -183,8 +183,8 @@ if (table.tableInfo.id == "kpis") {
         }
         
         table.appendRows(tableData);
-        doneCallback();
     });
+    doneCallback();
 }
 
 };
